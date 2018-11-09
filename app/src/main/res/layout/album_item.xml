@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/AlbumItemStyle"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvArtist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineHalfWidth"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            style="@style/AlbumItemStyle"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toTopOf="@+id/tvStreamable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineHalfWidth"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineHalfWidth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".5" />
+
+        <TextView
+            android:id="@+id/tvStreamable"
+            style="@style/AlbumItemStyle"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toTopOf="@+id/tvMbid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineHalfWidth"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtist"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/tvMbid"
+            style="@style/AlbumItemStyle"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineHalfWidth"
+            app:layout_constraintTop_toBottomOf="@+id/tvStreamable"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineHalfWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="192dp"
+            app:layout_constraintWidth_default="percent" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

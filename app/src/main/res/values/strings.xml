@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LastFmChallenge</string>
+    <string name="album_name">Album Name</string>
+    <string name="search">Search</string>
+    <string name="artist">Artist: %s</string>
+    <string name="mbid">MbId: %s</string>
+    <string name="streamable">Streamable: %s</string>
+</resources>
